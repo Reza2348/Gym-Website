@@ -1,0 +1,184 @@
+.section {
+    padding: 4rem 1.25rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: red;
+}
+
+.subtitle {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+
+.toggleBtn {
+
+    margin-top: 16px;
+    width: 250px;
+    height: 42px;
+    border-radius: 25px;
+    border: 1px solid red;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 16px;
+}
+
+.toggleBtn:hover {
+    background-color: #ef4444;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .plans {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+
+.planCard {
+    border: 2px solid red;
+    border-radius: 12px;
+    background-color: rgba(205, 78, 23, 0.15);
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+.planLabel {
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+
+.planTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.planDescription {
+    color: #eee;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+
+.planFeaturesTitle {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.planFeatures {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    color: white;
+    text-align: left;
+}
+
+.planFeatures li {
+    margin-bottom: 0.5rem;
+    padding-left: 12px;
+    position: relative;
+}
+
+.planFeatures li::before {
+    content: ".";
+    position: absolute;
+    left: 0;
+    color: red;
+}
+
+
+.planPrice {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.planBtn {
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #cd4e17;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .toggleBtn {
+        width: 220px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .planTitle {
+        font-size: 1.3rem;
+    }
+
+    .planDescription {
+        font-size: 0.85rem;
+    }
+
+    .planBtn {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}

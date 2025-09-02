@@ -1,0 +1,97 @@
+.section {
+    padding: 4rem 1.25rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    color: red;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.toolsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.8rem 1rem;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.icon {
+    font-size: 3.8rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+.cardTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+
+.learnMore {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.learnMore:hover {
+    color: #ff5e1f;
+}
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .icon {
+        font-size: 2.4rem;
+    }
+}
