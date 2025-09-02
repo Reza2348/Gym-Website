@@ -6,6 +6,7 @@ import OurPlans from "./components/OurPlans/OurPlans";
 import Ourfitness from "./components/Our fitness/Our fitness";
 import FitmakerBlog from "./components/FitmakerBlog/FitmakerBlog";
 import JoinOur from "./components/JoinOur/JoinOur";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <Ourfitness />
       <FitmakerBlog />
       <JoinOur />
+        <Footer />
     </>
   );
 }
